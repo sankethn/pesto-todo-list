@@ -1,40 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pesto TODO App
 
-## Getting Started
+This project is a web application built using Next.js and React.js. 
+For a quick visual overview, you can view a Loom video here: [Loom Video](https://www.loom.com/share/6761ef421f104e58b3948f9740577155?t=121&sid=c0cbac82-5f08-4b92-816e-037be0a9fbeb).
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Frontend:
+    * Next.js (https://cdn.ampproject.org/c/s/nextjs.org/?amp=1)
+    * React.js (https://react.dev/)
+    * NextUI (https://nextui.org/)
+    * Tailwind CSS (https://tailwindcss.com/docs/installation)
+* Database: Firebase Firestore (https://firebase.google.com/docs/firestore)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The project is organized with the following folders:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+* **public:** This folder contains static assets like icons and images that are accessible in the public domain of your application.
+* **pages:** This folder utilizes the Next.js Pages folder structure for defining application routes. The `index.js` file serves as the main entry point.
+* **api:** This folder houses any API routes required for your project. Firebase setup logic might reside here.
+* **utils:** This folder encapsulates reusable code:
+    * `constants.ts`: Stores all project-wide constants for consistency and maintainability.
+    * `helpers.ts`: Contains custom helper functions to avoid code duplication.
+    * `types.ts`: Defines data types for clarity and type safety (especially relevant with TypeScript).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Running the Project
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Development Server:**
+    ```bash
+    npm run dev
+    ```
+    This command starts the development server, allowing you to make changes and see them reflected in real-time.
 
-## Learn More
+2. **Fixing Lint Issues:**
+    ```bash
+    npm run lint:fix
+    ```
+    This command automatically fixes any linting errors identified by your configured static code analyzer. This helps maintain code quality and consistency.
 
-To learn more about Next.js, take a look at the following resources:
+## Additional Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Feel free to customize this README with further details about your project, such as deployment instructions, contributing guidelines, and specific usage instructions.
+* Consider including badges for dependencies, licenses, or project status to enhance the README's visual appeal and provide users with quick insights.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This README provides a solid foundation for documenting your Next.js project. Adapt it as needed to best represent your specific application structure and requirements.
